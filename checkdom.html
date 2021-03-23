@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>shopping cart</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="cart.css">  
+   </head>
+   <body>
+    <div class="container-fluid mt-5">
+        <h1 class="mb-5 text-center" style="color: #5161ce;">Shopping Cart</h1>
+        <div class="row justify-content-center">
+           <div class="col-md-8">
+              <div class="table-responsive">
+                 <table id="myTable" class="table">
+                    <thead>
+                       <tr>
+                          <th>Product</th>
+                          <th>Name</th>
+                          <th>Qty</th>
+                          <th>Price</th>
+                          <th class="text-right">
+                             <span id="amounth" class="amounth">Amount</span>
+                          </th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <td>
+                             <div class="product-img">
+                                <div class="img-prdct">
+                                   <img src="https://dmzr5ikm7nos4.cloudfront.net/stockitem/7e87c500-fbf5-11e9-a533-17657e96922c/m.jpg">
+                                </div>
+                             </div>
+                          </td>
+                          <td>
+                             <p>Rolex</p>
+                          </td>
+                          <td>
+                             <div class="button-container">
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="text" name="qty" min="0" class="qty form-control" class="qty" value="0"/>
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                             </div>
+                          </td>
+                          <td>
+                             <input type="text" value="250" class="price form-control" class="price" disabled>
+                          </td>
+                          <td align="right">$ <span id="amount" class="amount">0</span>
+                          </td>
+                       </tr>
+                       <!---- add more tr  ---------->
+                       <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://i.pinimg.com/originals/b8/9b/b0/b89bb0262a96d6437f839fb5b2f41e94.jpg">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Omega</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+">+</button>
+                              <input type="text" name="qty" min="0" class="qty form-control" class="qty" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-">-</button>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="157" class="price form-control" class="price" disabled>
+                        </td>
+                     
+                        <td align="right">$ <span id="amount" class="amount">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://www.cdiscount.com/pdt2/5/2/2/1/700x700/gue8431242948522/rw/montre-homme-guess-frontier-w1132g1-fashion-date.jpg">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Guess</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+">+</button>
+                              <input type="text" name="qty" min="0" class="qty form-control" class="qty" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-">-</button>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="172" class="price form-control"class="price" disabled>
+                        </td>
+                        <td align="right">$ <span id="amount" class="amount">0</span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                 <img src="https://gperdumesaiguilles.com/25255-large_default/festina-montre-homme-chrono-acier-dore-f204411.jpg">
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Festina</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button class="cart-qty-plus" type="button" value="+">+</button>
+                              <input type="text" name="qty" min="0" class="qty form-control" class="qty" value="0"/>
+                              <button class="cart-qty-minus" type="button" value="-">-</button>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="300" class="price form-control"class="price" disabled>
+                        </td>
+                        <td align="right">$ <span id="amount" class="amount">0</span>
+                        </td>
+                     </tr>
+                       <!---- add more tr  ---------->
+                    </tbody>
+                    <tfoot>
+                       <tr>
+                          <td colspan="4"></td>
+                          <td align="right">
+                             <strong>TOTAL = $  <span id="total" class="total">0</span>
+                             </strong>
+                          </td>
+                       </tr>
+                    </tfoot>
+                 </table>
+              </div>
+           </div>
+        </div>
+     </div>    
+<script  src="ss.js"></script>
+   </body>
+</html>
